@@ -88,10 +88,11 @@
 
             <li> <div class="PriceCard standard">
                 <h2>standard plan</h2>
+
                 <div class="price">95<sup>99</sup><br><span style=font-size:10px>PLN/MSC</span></div>
                 <div class="feature1standard">Zakup towaru + dostawa</div>
                 <div class="feature2">Serwis</div>
-                <div class="feature1standard">Gwarancja 5 lat</div>
+                <div class="feature1standard" id="regulation">Gwarancja 5 lat</div>
                 <a class="button" href="#">Dołącz</a>
             </div>
             </li>
@@ -102,7 +103,7 @@
                 <div class="feature1">Zakup towaru + dostawa</div>
                 <div class="feature2">Serwis</div>
                 <div class="feature1">Gwarancja 5 lat</div>
-                <div class="feature2">Porady projektanta</div>
+                <div class="feature2" id="regulation2">Porady projektanta</div>
                 <a class="button" href="#">Dołącz</a>
             </div>
             </li>
@@ -116,21 +117,23 @@
     <div class="container">
         <div class="title">kontakt<hr></div>
 
-        <form class="form">
-                <div>
-                    <label for="name"></label>
-                    <input type="text" placeholder="Imię" id="name">
-                </div>
+        <form>
+            <fieldset>
+                <label for="name"></label>
+                <input type="text" placeholder="Imię" id="name">
 
-                <div>
-                    <label for="mail"></label>
-                    <input type="email" placeholder="E-mail" id="mail">
-                </div>
-                <div>
-                    <label for="message"></label>
-                    <textarea rows="10" id="message" placeholder="Wiadomosc"></textarea>
-                </div>
+                <label for="mail"></label>
+                <input type="email" placeholder="E-mail" id="mail">
+
+                <label for="message"></label>
+                <textarea rows="10" id="message" placeholder="Wiadomosc"></textarea>
+
+            </fieldset>
         </form>
+<div class="RedChairContainer">
+            <img class="RedChair" src="images/red_chair.png"/>
+</div>
+
 
     </div>
 </section>
@@ -143,3 +146,6 @@
 
 </body>
 </html>
+
+
+
