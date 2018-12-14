@@ -2,146 +2,172 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Warsztat1</title>
+    <title>Sit ON Chair</title>
     <link rel="stylesheet" href="images/warsztat1.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/black_chair.png">
 </head>
 <body>
 
-<header>
+<header id="home">
     <div class="container">
 
         <div class="logo"><a href="#">SIT <span style="color: #00c3a0; font-weight: bold;">ON</span> CHAIR</a></div>
-
-        <nav class="navigation">
             <ul class="nav-list">
                 <li>
-                    <a href="#">O firmie</a>
+                    <a href="#"><span style="font-weight: bold;">Company</span></a>
                 </li>
                 <li>
-                    <a href="#">Galeria</a>
+                    <a href="#">Gallery</a>
                 </li>
                 <li>
-                    <a href="#">Kontakt</a>
+                    <a href="#">Contact</a>
                 </li>
             </ul>
-        </nav>
     </div>
 </header>
 
 <section class="slider">
 
-    <div class="menu">
-    </div>
+  <div class="drop">
+       <div class="triangle"></div>
+       <ul>
+           <li>
+               <a href="#">News</a>
+           </li>
+           <li>
+               <a href="#">Our team</a>
+           </li>
+           <li>
+               <a href="#">Our story</a>
+           </li>
+       </ul>
+   </div>
 
-    <div class="container">
-        <div class="imgContainer">
-            <img class="BlackChair" src="images/black_chair.png"/>
-        </div>
-        <div class="sliderText">
-            <h1>sit <span style="color: #00c3a0; font-weight: bold;">on</span> our <span style="color: #00c3a0; font-weight: bold;">chair</span></h1>
-            <p>Nam libero tempore, cum soluta nobis est eligendi
-                optio cumque nihil impedit quo minus id quod
-                maxime placeat facere possimus, omnis voluptas
-                optio cumque nihil impedit quo minus id quod
-                maxime placeat facere possimus, omnis voluptas .</p>
-            <button type="button"><a href="#">zobacz więcej</a></button>
-        </div>
-    </div>
+   <div class="container">
+       <div class="imgContainer">
+           <div class="leftArrow"><a href="#">&#60;</a></div>
+           <img class="BlackChair" src="images/black_chair.png"/>
+       </div>
+       <div class="sliderText">
+           <h1>sit <span style="color: #00c3a0; font-weight: bold;">on</span> our <span style="color: #00c3a0; font-weight: bold;">chair</span></h1>
+           <p>Nam libero tempore, cum soluta nobis est eligendi
+               optio cumque nihil impedit quo minus id quod
+               maxime placeat facere possimus, omnis voluptas
+               optio cumque nihil impedit quo minus id quod
+               maxime placeat facere possimus, omnis voluptas .</p>
+           <button type="button"><a href="#">see more</a></button>
+           <div class="rightArrow"><a href="#">&#62;</a></div>
+       </div>
+   </div>
 
 </section>
 
 <section class="armchairs">
-    <div class="container">
-        <ul class="boxes">
-            <li class="box1">
-                <div class="stripe">Chair CLAIR<hr></div>
-            </li>
-            <li class="box2">
-                <div class="stripe">Chair MARGARITA<hr></div>
-            </li>
-            <li class="box3">
-                <h3>Finds all inputs<hr></h3>
-                <div>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
-                    </br></br>
-                    Omnis voluptas optio cumque nihil impedit facere possimus.</div>
-            </li>
-        </ul>
+   <div class="container">
+       <ul class="boxes">
+           <li class="box1">
+               <div class="stripe">Chair CLAIR<hr></div>
+           </li>
+           <li class="box2">
+               <div class="stripe">Chair MARGARITA<hr></div>
+           </li>
+           <li class="box3">
+               <h3>Finds all inputs<hr></h3>
+               <div>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
+                   </br></br>
+                   Omnis voluptas optio cumque nihil impedit facere possimus.</div>
+           </li>
+       </ul>
 
-    </div>
+   </div>
 </section>
 
 <section class="prices">
-    <div class="container">
+   <div class="container">
 
-        <div class="title">cennik<hr></div>
+       <div class="title">pricing<hr></div>
 
-        <ul class="PriceOptions">
+       <ul class="PriceOptions">
 
-            <li> <div class="PriceCard">
-                <h2>basic plan</h2>
-                <div class="price">85<sup>99</sup><br><span style=font-size:10px>PLN/MSC</span></div>
-                <div class="feature1">Zakup towaru + dostawa</div>
-                <div class="feature2">Serwis</div>
-                <a class="button" href="#">Dołącz</a>
-            </div>
-            </li>
+           <li> <div class="PriceCard">
+               <h2>basic plan</h2>
+               <div class="price"><span style=font-size:35px>85</span><sup>99</sup><br><span style=font-size:12px>PLN/MNTH</span></div>
+               <div class="feature1">Goods + delivery</div>
+               <div class="feature2">Service</div>
+               <a class="button" >Sign up</a>
+           </div>
+           </li>
 
-            <li> <div class="PriceCard standard">
-                <h2>standard plan</h2>
+           <li> <div class="PriceCard standard">
+               <h2>standard plan</h2>
 
-                <div class="price">95<sup>99</sup><br><span style=font-size:10px>PLN/MSC</span></div>
-                <div class="feature1standard">Zakup towaru + dostawa</div>
-                <div class="feature2">Serwis</div>
-                <div class="feature1standard" id="regulation">Gwarancja 5 lat</div>
-                <a class="button" href="#">Dołącz</a>
-            </div>
-            </li>
+               <div class="price"><span style=font-size:35px>95</span><sup>99</sup><br><span style=font-size:12px>PLN/MNTH</span></div>
+               <div class="feature1standard">Goods + delivery</div>
+               <div class="feature2">Service</div>
+               <div class="feature1standard" id="regulation">5 years guarantee</div>
+               <a class="button">Sign up</a>
+           </div>
+           </li>
 
-            <li> <div class="PriceCard">
-                <h2>advanced plan</h2>
-                <div class="price">211<sup>00</sup><br><span style=font-size:10px>PLN/MSC</span></div>
-                <div class="feature1">Zakup towaru + dostawa</div>
-                <div class="feature2">Serwis</div>
-                <div class="feature1">Gwarancja 5 lat</div>
-                <div class="feature2" id="regulation2">Porady projektanta</div>
-                <a class="button" href="#">Dołącz</a>
-            </div>
-            </li>
+           <li> <div class="PriceCard">
+               <h2>advanced plan</h2>
+               <div class="price"><span style=font-size:35px>211</span><sup>00</sup><br><span style=font-size:12px>PLN/MNTH</span></div>
+               <div class="feature1">Goods + delivery</div>
+               <div class="feature2">Service</div>
+               <div class="feature1">5 years guarantee</div>
+               <div class="feature2" id="regulation2">Design consulting</div>
+               <a class="button">Sign up</a>
+           </div>
+           </li>
 
-        </ul>
+       </ul>
 
-    </div>
+   </div>
 </section>
 
 <section class="contact">
-    <div class="container">
-        <div class="title">kontakt<hr></div>
+   <div class="container">
+       <div class="title">contact<hr></div>
 
-        <form>
-            <fieldset>
-                <label for="name"></label>
-                <input type="text" placeholder="Imię" id="name">
+       <form>
+           <fieldset>
+               <label for="name"></label>
+               <input type="text" placeholder="Name" id="name">
 
-                <label for="mail"></label>
-                <input type="email" placeholder="E-mail" id="mail">
+               <label for="mail"></label>
+               <input type="email" placeholder="E-mail" id="mail">
 
-                <label for="message"></label>
-                <textarea rows="10" id="message" placeholder="Wiadomosc"></textarea>
+               <label for="message"></label>
+               <textarea rows="10" id="message" placeholder="Message"></textarea>
 
-            </fieldset>
-        </form>
-<div class="RedChairContainer">
-            <img class="RedChair" src="images/red_chair.png"/>
-</div>
+           </fieldset>
+       </form>
+       <div class="RedChairContainer">
+           <img class="RedChair" src="images/red_chair.png"/>
 
+       <div class="agreementBox">
+               <input type="checkbox" name="agreement" id="agreement" value="">
+               <label for="agreement">I agree to the processing</br>of my personal data</label>
+           <div class="contactButton"><span>Send</span></div>
 
-    </div>
+       </div>
+
+   </div>
 </section>
 
 <footer>
-    <div class="container">
+   <div class="container">
+           <p>Copyright 2018 | All Rights Reserved - Sit On Chair</p>
 
-    </div>
+           <ul class="social">
+               <li><a href="http://www.flickr.com/" target="_blank" rel="noopener noreferrer" title="flickr"><img src="images/flickr.png" alt ="flickr"></a></li>
+               <li><a href="http://www.vimeo.com/" target="_blank" rel="noopener noreferrer" title="Vimeo"><img src="images/vimeo.png" alt="Vimeo"></a></li>
+               <li><a href="http://www.pinterest.com/" target="_blank" rel="noopener noreferrer" title="Pinterest"><img src="images/pinterest.png" alt="Pinterest"></a></li>
+               <li><a href="http://www.twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter"><img src="images/twitter.png" alt="Twitter"></a></li>
+           </ul>
+           <p><a href="#home">Sit <strong>On</strong> Chair</a></p>
+   </div>
 </footer>
 
 </body>
