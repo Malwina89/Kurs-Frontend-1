@@ -1,3 +1,5 @@
+/*Layout*/
+
 *  {
     margin: 0 auto;
     padding: 0 auto;
@@ -9,7 +11,6 @@
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
-
 }
 header section footer {
     max-width: 100%;
@@ -19,43 +20,6 @@ header {
     height: 50px;
     color: white;
 }
-.drop {
-    position: relative;
-    left:300px;
-    background-color: black;
-    height: 65px;
-    width: 120px;
-    margin-top: 20px;
-    box-shadow: 3px 3px 10px black;
-    padding-top: 15px;
-}
-
-.drop li a{
-    color: white;
-    text-decoration: none;
-    margin-left: -12px;
-}
-
-.drop li a:hover{
-    color: #00c3a0;
-    font-weight: bold;
-
-}
-.drop ul {
-    list-style-type: none;
-}
-
-.triangle {
-    width: 0;
-    height: 0;
-    border-width: 0 7.5px 11px 7.5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
-    position: absolute;
-    right: 55px;
-    top: -11px;
-}
-
 .slider  {
     /*gradient background color*/
     background: rgba(255,255,255,1);
@@ -84,14 +48,18 @@ footer {
     height: 80px;
     background-color: white;
 }
-.nav-list {
-    padding: 20px;
-    list-style: none;
 
+/*Navigation*/
+
+.nav-list {
+    list-style: none;
+    margin: 5px 0;
+    display: flex;
+    padding: 10px;
 }
 .nav-list li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 15px;
 
 }
 .nav-list li a {
@@ -100,29 +68,138 @@ footer {
     padding: 10px;
     text-transform: uppercase;
 }
-.nav-list li a:hover {
-    font-weight: bold;
+.arrowDown {
+    width: 0;
+    height: 0;
+    border-width: 5px 3.5px 0px 3.5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    position: absolute;
+    left: 75%;
+    margin-left: 60px;
+    top: 23px;
+}
+.drop {
+    position: relative;
+    left: 50px;
+    height: 65px;
+    width: 100px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px black;
+    padding-top: 15px;
+    z-index: 100;
+    visibility: hidden;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-width: 0 7.5px 11px 7.5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    right: 95px;
+    transition: 0.5s all;
 }
 
+.drop li a{
+    color: white;
+    text-decoration: none;
+    margin-left: -12px;
+    padding: 5px 5px;
+    display: block;
+
+    text-transform: none;
+    font-weight: normal;
+}
+
+.drop ul {
+    width: 130px;
+    list-style: none;
+    margin-top: 10px;
+    background: black;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 10px black;
+    margin-left: -65px;
+    opacity: 0.1;
+    visibility: hidden;
+    transition: 0.5s all;
+}
 .logo {
     padding: 20px;
     width: 50%;
+    margin-top: -5px;
 }
 .logo a {
     color: white;
     text-decoration: none;
+}
 
+/*Navigation:hovers*/
+
+.dropLi:hover .drop>ul {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
 }
-.BlackChair {
-    margin-top: 30px;
-    width: 470px;
-    height: 337px;
+
+.nav-list li:hover .triangle {
+    max-height: 10px;
+    opacity: 1;
+    visibility: visible;
 }
+.drop li a:hover{
+    color: #00c3a0;
+    font-weight: bold;
+}
+.nav-list li a:hover {
+    font-weight: bold;
+}
+
+/*Slider*/
+
 .imgContainer {
-    width: 50%;
+    width: 70%;
     position: absolute;
+    left: 130px;
+}
+.black {
+    height: 55%;
+    width: 55%;
+    float: left;
+    margin-top: 65px;
+    position: relative;
+    left: -30px;
+}
+
+.orange {
+    height: 45%;
+    width: 45%;
+    float: left;
+    margin-top: 65px;
+    position: relative;
+    left: 20px;
+    top: 40px;
+}
+
+.red {
+    height: 35%;
+    width: 35%;
+    float: left;
+    margin-top: 65px;
+    position: relative;
     left: 100px;
-    top: -20px;
+    top: 40px;
+}
+.slider {
+    list-style: none;
+}
+
+.slider li{
+    display: none;
+}
+
+.slider .visible {
+    display: block;
 }
 
 .sliderText {
@@ -152,33 +229,42 @@ h1 {
     font-size: 20px;
     text-align: center;
     border: #00c3a0;
-    box-shadow: 1.5px 1.5px 5px black;
+    box-shadow: 2.5px 2.5px 6px grey;
 }
 .sliderText>button:active {
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px grey;
 }
 .sliderText>button a {
     text-decoration: none;
     color: white;
 }
-.leftArrow a {
-    font-size: 40px;
-    color: #00c3a0;
-    font-weight: bold;
-    position: relative;
-    top:200px;
-    text-decoration: none;
-}
-.rightArrow a {
-    font-size: 40px;
-    color: #00c3a0;
-    font-weight: bold;
-    position: relative;
-    bottom: 145px;
-    left: 350px;
-    text-decoration: none;
 
+.arrows a {
+    font-weight: lighter;
+    position: absolute;
+    font-size: 80px;
+    color: #27c7ab;
+    text-decoration: none;
+    z-index: 999;
+    transition: 0.2s all;
 }
+
+.rightArrow a {
+    right: -15px;
+    top: 130px;
+}
+
+.leftArrow a {
+    left: 10px;
+    top: 180px;
+}
+.arrows:hover a {
+    text-shadow: 1px 3px 10px darkgrey;
+    font-weight: normal;
+}
+
+/*Armchairs*/
+
 .boxes {
     list-style-type: none;
 }
@@ -223,6 +309,17 @@ h1 {
     font-size: 14px;
     padding-top: 20px;
 }
+.box1:hover .stripe {
+    opacity: 0;
+    visibility: hidden;
+}
+.box2:hover .stripe {
+    opacity: 0;
+    visibility: hidden;
+}
+.box1:hover, .box2:hover {
+    box-shadow: 3px 3px 10px grey;
+}
 hr {
     border: 3px solid #00c3a0;
     position: relative;
@@ -240,12 +337,14 @@ hr {
     right: 55px;
     width: 150px;
 }
+
+/*Titles*/
+
 .title {
     text-transform: uppercase;
     font-weight: lighter;
     position: relative;
     font-size: 20px;
-
 }
 .prices .title {
     top: 40px;
@@ -253,13 +352,15 @@ hr {
     font-weight: normal;
 }
 .contact .title {
-   margin-left: 220px;
+    margin-left: 220px;
     font-weight: normal;
 }
 
 .title hr {
     width: 150px;
 }
+
+/*Prices*/
 
 .PriceCard {
     height: 450px;
@@ -288,11 +389,11 @@ hr {
     border-radius: 10px;
     padding: 10px 15px 0 15px;
     cursor: pointer;
-    box-shadow: 1.5px 1.5px 5px black;
+    box-shadow: 2.5px 2.5px 6px grey;
 
 }
 .PriceCard .button:active {
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px grey;
 }
 
 .PriceCard:before, .PriceCard:after {
@@ -321,8 +422,6 @@ hr {
 .PriceCard.standard:before {
     border: #00c3a0 solid 2px;
 }
-
-
 .PriceOptions {
     list-style-type: none;
     margin-top: 100px;
@@ -361,18 +460,17 @@ hr {
     line-height: 25px;
     font-size: 20px;
 }
+.PriceCard:hover {
+    box-shadow: 3px 3px 10px grey;
+}
 .feature1 {
     background-color: #e3e3e3;
-
-
 }
 .feature2 {
     background-color: #f0f0f0;
-
 }
 .feature1standard {
     background-color: white;
-
 }
 .standard {
     background-color: #00c3a0;
@@ -385,7 +483,6 @@ hr {
     color: #00c3a0;
     background-color: white;
     margin-bottom: -100px;
-
 }
 
 .price {
@@ -401,6 +498,9 @@ hr {
 .standard sup {
     color: #00c3a0;
 }
+
+/*Contact*/
+
 .contact .title {
     position: relative;
     top: 40px;
@@ -527,11 +627,13 @@ textarea {
     cursor: pointer;
     color: white;
     text-decoration: none;
-    box-shadow: 1.5px 1.5px 5px black;
+    box-shadow: 2.5px 2.5px 6px grey;
 }
 .contactButton:active {
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px grey;
 }
+
+/*Footer*/
 
 footer a {
     font-family: 'ralewaybold', sans-serif;
