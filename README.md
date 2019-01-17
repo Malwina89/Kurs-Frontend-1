@@ -1,4 +1,4 @@
-<a href= "https://malwina89.github.io/Sit-On-Chair/#"></a>
+<a href= "https://malwina89.github.io/Sit-On-Chair/#">https://malwina89.github.io/Sit-On-Chair/</a>
 
 My 1st HTML/CSS project with a bit JavaScript funcionality, within a Frontend course.
 
